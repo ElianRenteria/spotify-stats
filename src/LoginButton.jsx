@@ -10,7 +10,8 @@ const LoginButton = () => {
     window.location.href = authUrl; // Redirect to Spotify login
   };
   return (
-        <div className='flex items-center justify-center h-full w-full'>
+        <div className='flex flex-col items-center justify-center h-full w-full'>
+            <h1 className='mb-5'>Spotify Stats</h1>
             <button className='btn btn-primary mb-30' onClick={login}>Login with Spotify</button>
         </div>
     );

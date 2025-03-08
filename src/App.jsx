@@ -1,7 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import LoginButton from "./LoginButton";
-import TopArtists from "./TopArtists";
+import MusicToggle from "./MusicToggle";
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("spotify_access_token") || null);
@@ -20,8 +20,7 @@ function App() {
 
   return (
     <div className='flex flex-col items-center w-full h-screen'>
-      <h1 className='mt-5'>Spotify Top Artists</h1>
-      {!token ? <LoginButton /> : <TopArtists token={token} />}
+      {!token ? <LoginButton /> : <MusicToggle token={token} />}
     </div>
   );
 }

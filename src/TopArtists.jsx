@@ -21,6 +21,7 @@ const TopArtists = ({ token }) => {
 
   return (
     <div className='pb-10'>
+      <h1 className=''>Spotify Stats</h1>
       <h2 className='mb-5'>Your Top 10 Artists</h2>
       <div className='flex flex-col items-center gap-5'>
         {artists.map((artist, i) => (
